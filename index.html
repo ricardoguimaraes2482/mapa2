@@ -1,0 +1,1998 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="mapbox/mapbox-gl.css">
+        <link rel="stylesheet" href="css/qgis2web.css">
+        <style>
+        #map {
+            width: 1415px;
+            height: 886px;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <nav id="menu"></nav>
+              <div id="distance" class="distance-container"></div>
+        </div>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="./mapbox/mapbox-gl.js"></script>
+        <script src="data/Name_Pedroso_0.js"></script>
+        <script src="data/Name_Pejeiroz_1.js"></script>
+        <script src="data/Name_Penameda_2.js"></script>
+        <script src="data/Name_PenedoGrande_3.js"></script>
+        <script src="data/Name_PicodoSobreiro_4.js"></script>
+        <script src="data/Name_Pigarreira_5.js"></script>
+        <script src="data/Name_PortaRuivas_6.js"></script>
+        <script src="data/Name_RocaAlta_7.js"></script>
+        <script src="data/Name_RocaNegra_8.js"></script>
+        <script src="data/Name_SoJoodaFraga_9.js"></script>
+        <script src="data/Name_Tombaril_10.js"></script>
+        <script src="data/Name_Torrinheira_11.js"></script>
+        <script src="data/Name_Vaires_12.js"></script>
+        <script src="data/Name_Xertelo_13.js"></script>
+        <script src="data/Name_guaSanta_14.js"></script>
+        <script src="data/Name_Alcantara_15.js"></script>
+        <script src="data/Name_AltodaAborreca_16.js"></script>
+        <script src="data/Name_AltodaAmoreira_17.js"></script>
+        <script src="data/Name_AltodaFarria_18.js"></script>
+        <script src="data/Name_AltodaMoela_19.js"></script>
+        <script src="data/Name_AltodaPenaCereja_20.js"></script>
+        <script src="data/Name_AltodaPicota_21.js"></script>
+        <script src="data/Name_AltodaPreguia_22.js"></script>
+        <script src="data/Name_AltodaTojeira_23.js"></script>
+        <script src="data/Name_AltodasAlbas_24.js"></script>
+        <script src="data/Name_AltodasCortelhas_25.js"></script>
+        <script src="data/Name_AltodasManguelas_26.js"></script>
+        <script src="data/Name_AltodasPortasdoCastanheiro_27.js"></script>
+        <script src="data/Name_AltodasUrgeiras_28.js"></script>
+        <script src="data/Name_AltodeCrasto_29.js"></script>
+        <script src="data/Name_AltodePalma_30.js"></script>
+        <script src="data/Name_AltodeSelaCavalos_31.js"></script>
+        <script src="data/Name_AltodoBezerral_32.js"></script>
+        <script src="data/Name_AltodoCavalho_33.js"></script>
+        <script src="data/Name_AltodoCosteiro_34.js"></script>
+        <script src="data/Name_AltodoFial_35.js"></script>
+        <script src="data/Name_AltodoPadinho_36.js"></script>
+        <script src="data/Name_AltodoPisco_37.js"></script>
+        <script src="data/Name_AltodoSabroso_38.js"></script>
+        <script src="data/Name_AltodoVeredo_39.js"></script>
+        <script src="data/Name_AltodosCeposAlvos_40.js"></script>
+        <script src="data/Name_AltodosGolados_41.js"></script>
+        <script src="data/Name_Anamo_42.js"></script>
+        <script src="data/Name_Bemposta_43.js"></script>
+        <script src="data/Name_Bicos_44.js"></script>
+        <script src="data/Name_Borrageiro_45.js"></script>
+        <script src="data/Name_CabeodaGeiradeBaixo_46.js"></script>
+        <script src="data/Name_CabeodaTrapela_47.js"></script>
+        <script src="data/Name_CabeodeFelgueiras_48.js"></script>
+        <script src="data/Name_CabeodePalheiros_49.js"></script>
+        <script src="data/Name_CabeodoCantarelo_50.js"></script>
+        <script src="data/Name_CabeodoMadorno_51.js"></script>
+        <script src="data/Name_CabeodosBicos_52.js"></script>
+        <script src="data/Name_CabeosdaFumarada_53.js"></script>
+        <script src="data/Name_Cabreira_54.js"></script>
+        <script src="data/Name_Calcednia_55.js"></script>
+        <script src="data/Name_CamposVerdes_56.js"></script>
+        <script src="data/Name_Cantarelo_57.js"></script>
+        <script src="data/Name_Carvalhosa_58.js"></script>
+        <script src="data/Name_CastroLaboreiro_59.js"></script>
+        <script src="data/Name_ChdePinheiro_60.js"></script>
+        <script src="data/Name_Chermucho_61.js"></script>
+        <script src="data/Name_CornosdeCandela_62.js"></script>
+        <script src="data/Name_CotosdeAtalhos_63.js"></script>
+        <script src="data/Name_CotosdeFonteFria_64.js"></script>
+        <script src="data/Name_Couo_65.js"></script>
+        <script src="data/Name_CoutodoOsso_66.js"></script>
+        <script src="data/Name_Covelo_67.js"></script>
+        <script src="data/Name_Cruzeiro_68.js"></script>
+        <script src="data/Name_CurvaceiraTonel_69.js"></script>
+        <script src="data/Name_Eiras_70.js"></script>
+        <script src="data/Name_EspigodaLamadePau_71.js"></script>
+        <script src="data/Name_Fajzinha_72.js"></script>
+        <script src="data/Name_FonteFria_73.js"></script>
+        <script src="data/Name_FragadaEspinheira_74.js"></script>
+        <script src="data/Name_FragadoPaul_75.js"></script>
+        <script src="data/Name_FragadoSuadouro_76.js"></script>
+        <script src="data/Name_Franqueira_77.js"></script>
+        <script src="data/Name_Giestoso_78.js"></script>
+        <script src="data/Name_Infantas_79.js"></script>
+        <script src="data/Name_Junceda_80.js"></script>
+        <script src="data/Name_LamasdeHomem_81.js"></script>
+        <script src="data/Name_Lamas2_82.js"></script>
+        <script src="data/Name_Larape_83.js"></script>
+        <script src="data/Name_Maceiras_84.js"></script>
+        <script src="data/Name_Maranho_85.js"></script>
+        <script src="data/Name_Moldeira_86.js"></script>
+        <script src="data/Name_Mourisca_87.js"></script>
+        <script src="data/Name_OuteirodaMeda_88.js"></script>
+        <script src="data/Name_OuteiroRedondo_89.js"></script>
+        <script src="data/Name_PdaMedela_90.js"></script>
+        <script src="data/Name_PedraBela_91.js"></script>
+        <script src="data/Name_PedraRajada_92.js"></script>
+        <script src="data/Name_Pedrada_93.js"></script>
+        <script src="data/Name_PeitodaRocha_94.js"></script>
+        <script src="data/Name_PenamedaPequena_95.js"></script>
+        <script src="data/Name_PenedoFurado_96.js"></script>
+        <script src="data/Name_PicodaNevosa_97.js"></script>
+        <script src="data/Name_Picota_98.js"></script>
+        <script src="data/Name_Piscaredo_99.js"></script>
+        <script src="data/Name_PorteladaAmoreira_100.js"></script>
+        <script src="data/Name_RocadoTouro_101.js"></script>
+        <script src="data/Name_Rocalva_102.js"></script>
+        <script src="data/Name_Sorro_103.js"></script>
+        <script src="data/Name_TorreGrande_104.js"></script>
+        <script src="data/Name_Urzeira_105.js"></script>
+        <script src="data/Name_Varziela_106.js"></script>
+        <script src="data/Name__107.js"></script>
+        <script src="data/Name_Aguieira_108.js"></script>
+        <script src="data/Name_AltodaAbelheira_109.js"></script>
+        <script src="data/Name_AltodaAguieira_110.js"></script>
+        <script src="data/Name_AltodaBarreira_111.js"></script>
+        <script src="data/Name_AltodaMansodoGuerreiro_112.js"></script>
+        <script src="data/Name_AltodaMulherCalca_113.js"></script>
+        <script src="data/Name_AltodaPena_114.js"></script>
+        <script src="data/Name_AltodaPorteladoPau_115.js"></script>
+        <script src="data/Name_AltodaSurreiradoMeioDia_116.js"></script>
+        <script src="data/Name_AltodaVarziela_117.js"></script>
+        <script src="data/Name_AltodasBezerreiras_118.js"></script>
+        <script src="data/Name_AltodasEiras_119.js"></script>
+        <script src="data/Name_AltodasPicotas_120.js"></script>
+        <script src="data/Name_AltodasRoadas_121.js"></script>
+        <script src="data/Name_AltodeCidadelhe_122.js"></script>
+        <script src="data/Name_AltodeGontim_123.js"></script>
+        <script src="data/Name_AltodeRebolar_124.js"></script>
+        <script src="data/Name_AltodeTrzdaFraga_125.js"></script>
+        <script src="data/Name_AltodoBuscal_126.js"></script>
+        <script src="data/Name_AltodoCorisco_127.js"></script>
+        <script src="data/Name_AltodoFacho_128.js"></script>
+        <script src="data/Name_AltodoOuroso_129.js"></script>
+        <script src="data/Name_AltodoPadreiro_130.js"></script>
+        <script src="data/Name_AltodoPradoAmarelo_131.js"></script>
+        <script src="data/Name_AltodoTapado_132.js"></script>
+        <script src="data/Name_AltodoZebreiro_133.js"></script>
+        <script src="data/Name_AltodosChamiais_134.js"></script>
+        <script src="data/Name_AltodosPiornais_135.js"></script>
+        <script src="data/Name_Arrocela_136.js"></script>
+        <script src="data/Name_BicosAltos_137.js"></script>
+        <script src="data/Name_BorrageiroII_138.js"></script>
+        <script src="data/Name_Cabeas_139.js"></script>
+        <script src="data/Name_CabeodaGeiradeCima_140.js"></script>
+        <script src="data/Name_CabeodasQuatroFontes_141.js"></script>
+        <script src="data/Name_CabeodeMoinho_142.js"></script>
+        <script src="data/Name_CabeodeParanhos_143.js"></script>
+        <script src="data/Name_CabeodoFitoiro_144.js"></script>
+        <script src="data/Name_CabeodoPinheiro_145.js"></script>
+        <script src="data/Name_CabeoFormoso_146.js"></script>
+        <script src="data/Name_CabeosdeMao_147.js"></script>
+        <script src="data/Name_Caa_148.js"></script>
+        <script src="data/Name_Calvrio_149.js"></script>
+        <script src="data/Name_Cancelo_150.js"></script>
+        <script src="data/Name_Carvalhinha_151.js"></script>
+        <script src="data/Name_Castanheiro_152.js"></script>
+        <script src="data/Name_Cerqueiral_153.js"></script>
+        <script src="data/Name_Chelo_154.js"></script>
+        <script src="data/Name_Compadre_155.js"></script>
+        <script src="data/Name_Cotil_156.js"></script>
+        <script src="data/Name_CotosdeCidadelha_157.js"></script>
+        <script src="data/Name_CotosdeSoalheira_158.js"></script>
+        <script src="data/Name_CoutodaRedonda_159.js"></script>
+        <script src="data/Name_Couto_160.js"></script>
+        <script src="data/Name_CruzdoTouro_161.js"></script>
+        <script src="data/Name_CurraldaPedra_162.js"></script>
+        <script src="data/Name_Delambeice_163.js"></script>
+        <script src="data/Name_EntreOuteiros_164.js"></script>
+        <script src="data/Name_Facho_165.js"></script>
+        <script src="data/Name_Fojeira_166.js"></script>
+        <script src="data/Name_Formarigo_167.js"></script>
+        <script src="data/Name_FragadeBrazalite_168.js"></script>
+        <script src="data/Name_FragadoSarilho_169.js"></script>
+        <script src="data/Name_FragasdoRamisquedo_170.js"></script>
+        <script src="data/Name_Gamil_171.js"></script>
+        <script src="data/Name_Guido_172.js"></script>
+        <script src="data/Name_IteirodOvos_173.js"></script>
+        <script src="data/Name_Junco_174.js"></script>
+        <script src="data/Name_Lamas_175.js"></script>
+        <script src="data/Name_Lamelas_176.js"></script>
+        <script src="data/Name_Louria_177.js"></script>
+        <script src="data/Name_Malha_178.js"></script>
+        <script src="data/Name_Matana_179.js"></script>
+        <script src="data/Name_MontedasChs_180.js"></script>
+        <script src="data/Name_OuteiroAlvo_181.js"></script>
+        <script src="data/Name_OuteirodoPssaro_182.js"></script>
+        <script src="data/Name_Palheiros_183.js"></script>
+        <script src="data/Name_PdeCabril_184.js"></script>
+        <script src="data/Name_PedraFurada_185.js"></script>
+        <script src="data/2B_186.js"></script>
+        <script src="data/2_R_187.js"></script>
+        <script src="data/3A_188.js"></script>
+        <script src="data/3B_189.js"></script>
+        <script src="data/4A_190.js"></script>
+        <script src="data/5A_191.js"></script>
+        <script src="data/5A2_192.js"></script>
+        <script src="data/5C_193.js"></script>
+        <script src="data/6A_194.js"></script>
+        <script src="data/6C_195.js"></script>
+        <script src="data/6D_196.js"></script>
+        <script src="data/7A_197.js"></script>
+        <script src="data/7C_198.js"></script>
+        <script src="data/7_199.js"></script>
+        <script src="data/8_200.js"></script>
+        <script src="data/9_201.js"></script>
+        <script src="data/10_202.js"></script>
+        <script src="data/12A_203.js"></script>
+        <script src="data/13A_204.js"></script>
+        <script src="data/13C_205.js"></script>
+        <script src="data/13E_206.js"></script>
+        <script src="data/14A_207.js"></script>
+        <script src="data/14C_208.js"></script>
+        <script src="data/14E_209.js"></script>
+        <script src="data/15A_210.js"></script>
+        <script src="data/15C_211.js"></script>
+        <script src="data/15E_212.js"></script>
+        <script src="data/15G_213.js"></script>
+        <script src="data/15I_214.js"></script>
+        <script src="data/15_215.js"></script>
+        <script src="data/16B_216.js"></script>
+        <script src="data/16D_217.js"></script>
+        <script src="data/16F_218.js"></script>
+        <script src="data/17A_219.js"></script>
+        <script src="data/17_220.js"></script>
+        <script src="data/18_221.js"></script>
+        <script src="data/19B_222.js"></script>
+        <script src="data/19D_223.js"></script>
+        <script src="data/19F_224.js"></script>
+        <script src="data/19H_225.js"></script>
+        <script src="data/19J_226.js"></script>
+        <script src="data/19_227.js"></script>
+        <script src="data/20_228.js"></script>
+        <script src="data/21B_229.js"></script>
+        <script src="data/21_230.js"></script>
+        <script src="data/22_231.js"></script>
+        <script src="data/23B_232.js"></script>
+        <script src="data/24A_233.js"></script>
+        <script src="data/24C_234.js"></script>
+        <script src="data/25A_235.js"></script>
+        <script src="data/25_236.js"></script>
+        <script src="data/26_237.js"></script>
+        <script src="data/27B_238.js"></script>
+        <script src="data/27_239.js"></script>
+        <script src="data/28B_240.js"></script>
+        <script src="data/28_241.js"></script>
+        <script src="data/29A_242.js"></script>
+        <script src="data/29B1_243.js"></script>
+        <script src="data/29_244.js"></script>
+        <script src="data/30_245.js"></script>
+        <script src="data/31B_246.js"></script>
+        <script src="data/31C_247.js"></script>
+        <script src="data/31_248.js"></script>
+        <script src="data/32A_249.js"></script>
+        <script src="data/32B1_250.js"></script>
+        <script src="data/32_251.js"></script>
+        <script src="data/33B_252.js"></script>
+        <script src="data/33D_253.js"></script>
+        <script src="data/341A_254.js"></script>
+        <script src="data/34B_255.js"></script>
+        <script src="data/34_256.js"></script>
+        <script src="data/35A1_257.js"></script>
+        <script src="data/35C_258.js"></script>
+        <script src="data/35_259.js"></script>
+        <script src="data/36_260.js"></script>
+        <script src="data/37B_261.js"></script>
+        <script src="data/37_262.js"></script>
+        <script src="data/38B_263.js"></script>
+        <script src="data/39A_264.js"></script>
+        <script src="data/39C_265.js"></script>
+        <script src="data/39E_266.js"></script>
+        <script src="data/40A_267.js"></script>
+        <script src="data/40B_268.js"></script>
+        <script src="data/40_269.js"></script>
+        <script src="data/41_270.js"></script>
+        <script src="data/42A_271.js"></script>
+        <script src="data/42C_272.js"></script>
+        <script src="data/42_273.js"></script>
+        <script src="data/43B_274.js"></script>
+        <script src="data/44A_275.js"></script>
+        <script src="data/451A_276.js"></script>
+        <script src="data/45B_277.js"></script>
+        <script src="data/46A_278.js"></script>
+        <script src="data/471A_279.js"></script>
+        <script src="data/473A_280.js"></script>
+        <script src="data/47A_281.js"></script>
+        <script src="data/47B_282.js"></script>
+        <script src="data/47C_283.js"></script>
+        <script src="data/47E_284.js"></script>
+        <script src="data/48A_285.js"></script>
+        <script src="data/491A_286.js"></script>
+        <script src="data/49A_287.js"></script>
+        <script src="data/49B_288.js"></script>
+        <script src="data/49C_289.js"></script>
+        <script src="data/50A_290.js"></script>
+        <script src="data/50_291.js"></script>
+        <script src="data/51B_292.js"></script>
+        <script src="data/52A_293.js"></script>
+        <script src="data/531A_E_294.js"></script>
+        <script src="data/532A_295.js"></script>
+        <script src="data/53_R_296.js"></script>
+        <script src="data/2A_297.js"></script>
+        <script src="data/2_298.js"></script>
+        <script src="data/2_R1_299.js"></script>
+        <script src="data/3A1_300.js"></script>
+        <script src="data/3_301.js"></script>
+        <script src="data/4_302.js"></script>
+        <script src="data/5A1_303.js"></script>
+        <script src="data/5B_304.js"></script>
+        <script src="data/5_305.js"></script>
+        <script src="data/6B_306.js"></script>
+        <script src="data/6C1_307.js"></script>
+        <script src="data/6_308.js"></script>
+        <script src="data/7B_309.js"></script>
+        <script src="data/7D_310.js"></script>
+        <script src="data/8A_311.js"></script>
+        <script src="data/9A_312.js"></script>
+        <script src="data/10A_313.js"></script>
+        <script src="data/11_314.js"></script>
+        <script src="data/12_315.js"></script>
+        <script src="data/13B_316.js"></script>
+        <script src="data/13D_317.js"></script>
+        <script src="data/13_318.js"></script>
+        <script src="data/14B_319.js"></script>
+        <script src="data/14D_320.js"></script>
+        <script src="data/14_321.js"></script>
+        <script src="data/15B_322.js"></script>
+        <script src="data/15D_323.js"></script>
+        <script src="data/15F_324.js"></script>
+        <script src="data/15H_325.js"></script>
+        <script src="data/15J_326.js"></script>
+        <script src="data/16A_327.js"></script>
+        <script src="data/16C_328.js"></script>
+        <script src="data/16E_329.js"></script>
+        <script src="data/16_330.js"></script>
+        <script src="data/17B_331.js"></script>
+        <script src="data/18A_332.js"></script>
+        <script src="data/19A_333.js"></script>
+        <script src="data/19C_334.js"></script>
+        <script src="data/19E_335.js"></script>
+        <script src="data/19G_336.js"></script>
+        <script src="data/19I_337.js"></script>
+        <script src="data/19K_338.js"></script>
+        <script src="data/20A_339.js"></script>
+        <script src="data/21A_340.js"></script>
+        <script src="data/21C_341.js"></script>
+        <script src="data/22A_342.js"></script>
+        <script src="data/23A_343.js"></script>
+        <script src="data/23_344.js"></script>
+        <script src="data/24B_345.js"></script>
+        <script src="data/24_346.js"></script>
+        <script src="data/25B_347.js"></script>
+        <script src="data/26A_348.js"></script>
+        <script src="data/27A_349.js"></script>
+        <script src="data/27C_350.js"></script>
+        <script src="data/28A_351.js"></script>
+        <script src="data/28C_352.js"></script>
+        <script src="data/291A_353.js"></script>
+        <script src="data/29B_354.js"></script>
+        <script src="data/29C_355.js"></script>
+        <script src="data/30A_356.js"></script>
+        <script src="data/31A_357.js"></script>
+        <script src="data/31B1_358.js"></script>
+        <script src="data/31D_359.js"></script>
+        <script src="data/321A_360.js"></script>
+        <script src="data/32B_361.js"></script>
+        <script src="data/32C_362.js"></script>
+        <script src="data/33A_363.js"></script>
+        <script src="data/33C_364.js"></script>
+        <script src="data/33_365.js"></script>
+        <script src="data/34A_366.js"></script>
+        <script src="data/34C_367.js"></script>
+        <script src="data/35A_368.js"></script>
+        <script src="data/35B_369.js"></script>
+        <script src="data/35D_370.js"></script>
+        <script src="data/36A_371.js"></script>
+        <script src="data/37A_372.js"></script>
+        <script src="data/37C_373.js"></script>
+        <script src="data/38A_374.js"></script>
+        <script src="data/38_375.js"></script>
+        <script src="data/39B_376.js"></script>
+        <script src="data/39D_377.js"></script>
+        <script src="data/39_378.js"></script>
+        <script src="data/40A1_379.js"></script>
+        <script src="data/40C_380.js"></script>
+        <script src="data/41A_381.js"></script>
+        <script src="data/421A_382.js"></script>
+        <script src="data/42B_383.js"></script>
+        <script src="data/42D_384.js"></script>
+        <script src="data/43A_385.js"></script>
+        <script src="data/43_386.js"></script>
+        <script src="data/44_387.js"></script>
+        <script src="data/45A_388.js"></script>
+        <script src="data/45_389.js"></script>
+        <script src="data/46_390.js"></script>
+        <script src="data/472A_391.js"></script>
+        <script src="data/474A_392.js"></script>
+        <script src="data/47A1_393.js"></script>
+        <script src="data/47B1_394.js"></script>
+        <script src="data/47D_395.js"></script>
+        <script src="data/47_396.js"></script>
+        <script src="data/48_397.js"></script>
+        <script src="data/492A_398.js"></script>
+        <script src="data/49A1_399.js"></script>
+        <script src="data/49B1_400.js"></script>
+        <script src="data/49_401.js"></script>
+        <script src="data/50B_402.js"></script>
+        <script src="data/51A_403.js"></script>
+        <script src="data/51_404.js"></script>
+        <script src="data/52_405.js"></script>
+        <script src="data/531A_P_406.js"></script>
+        <script src="data/53_407.js"></script>
+        <script src="data/53AR1_408.js"></script>
+        <script src="data/53AR_409.js"></script>
+        <script src="data/59B1_410.js"></script>
+        <script src="data/59C1_411.js"></script>
+        <script src="data/59E_412.js"></script>
+        <script src="data/59_413.js"></script>
+        <script src="data/53AR2_414.js"></script>
+        <script src="data/54_415.js"></script>
+        <script src="data/55_416.js"></script>
+        <script src="data/56_417.js"></script>
+        <script src="data/57A_418.js"></script>
+        <script src="data/57_419.js"></script>
+        <script src="data/581A_420.js"></script>
+        <script src="data/58A1_421.js"></script>
+        <script src="data/58C_422.js"></script>
+        <script src="data/58D_423.js"></script>
+        <script src="data/58F_424.js"></script>
+        <script src="data/58H_425.js"></script>
+        <script src="data/58I_426.js"></script>
+        <script src="data/58K_427.js"></script>
+        <script src="data/58M_428.js"></script>
+        <script src="data/591A_429.js"></script>
+        <script src="data/59B_430.js"></script>
+        <script src="data/59C_431.js"></script>
+        <script src="data/59D_432.js"></script>
+        <script src="data/59F_433.js"></script>
+        <script src="data/60_434.js"></script>
+        <script src="data/54A_435.js"></script>
+        <script src="data/55A_436.js"></script>
+        <script src="data/56BIS_437.js"></script>
+        <script src="data/56_R_438.js"></script>
+        <script src="data/57B_439.js"></script>
+        <script src="data/57_R_440.js"></script>
+        <script src="data/58A_441.js"></script>
+        <script src="data/58B_442.js"></script>
+        <script src="data/58C1_443.js"></script>
+        <script src="data/58E_444.js"></script>
+        <script src="data/58G_445.js"></script>
+        <script src="data/58H1_446.js"></script>
+        <script src="data/58J_447.js"></script>
+        <script src="data/58L_448.js"></script>
+        <script src="data/58_449.js"></script>
+        <script src="data/59A_450.js"></script>
+        <script src="data/G80_451.js"></script>
+        <script src="data/G82_452.js"></script>
+        <script src="data/G84_453.js"></script>
+        <script src="data/G86_454.js"></script>
+        <script src="data/G88_455.js"></script>
+        <script src="data/G90_456.js"></script>
+        <script src="data/G92_457.js"></script>
+        <script src="data/G94_458.js"></script>
+        <script src="data/G96_459.js"></script>
+        <script src="data/601A_460.js"></script>
+        <script src="data/60A1_461.js"></script>
+        <script src="data/61_462.js"></script>
+        <script src="data/622A_463.js"></script>
+        <script src="data/62B_464.js"></script>
+        <script src="data/631A_465.js"></script>
+        <script src="data/63B_466.js"></script>
+        <script src="data/63D_467.js"></script>
+        <script src="data/63E1_468.js"></script>
+        <script src="data/63F_469.js"></script>
+        <script src="data/63H_470.js"></script>
+        <script src="data/63_471.js"></script>
+        <script src="data/64_472.js"></script>
+        <script src="data/G1_473.js"></script>
+        <script src="data/G3_474.js"></script>
+        <script src="data/G5_475.js"></script>
+        <script src="data/G7_476.js"></script>
+        <script src="data/G9_477.js"></script>
+        <script src="data/G11_478.js"></script>
+        <script src="data/G13_479.js"></script>
+        <script src="data/G15_480.js"></script>
+        <script src="data/G17_481.js"></script>
+        <script src="data/G19_482.js"></script>
+        <script src="data/G21_483.js"></script>
+        <script src="data/G23_484.js"></script>
+        <script src="data/G25_485.js"></script>
+        <script src="data/G27_486.js"></script>
+        <script src="data/G29_487.js"></script>
+        <script src="data/G31_488.js"></script>
+        <script src="data/G33_489.js"></script>
+        <script src="data/G35_490.js"></script>
+        <script src="data/G37_491.js"></script>
+        <script src="data/G39_492.js"></script>
+        <script src="data/G41_493.js"></script>
+        <script src="data/G43_494.js"></script>
+        <script src="data/G45_495.js"></script>
+        <script src="data/G47_496.js"></script>
+        <script src="data/G49_497.js"></script>
+        <script src="data/G51_498.js"></script>
+        <script src="data/G53_499.js"></script>
+        <script src="data/G55_500.js"></script>
+        <script src="data/G57_501.js"></script>
+        <script src="data/G59_502.js"></script>
+        <script src="data/G61_503.js"></script>
+        <script src="data/G63_504.js"></script>
+        <script src="data/G65_505.js"></script>
+        <script src="data/G67_506.js"></script>
+        <script src="data/G69_507.js"></script>
+        <script src="data/G71_508.js"></script>
+        <script src="data/G73_509.js"></script>
+        <script src="data/G75_510.js"></script>
+        <script src="data/G77_511.js"></script>
+        <script src="data/G79_512.js"></script>
+        <script src="data/G81_513.js"></script>
+        <script src="data/G83_514.js"></script>
+        <script src="data/G85_515.js"></script>
+        <script src="data/G87_516.js"></script>
+        <script src="data/G89_517.js"></script>
+        <script src="data/G91_518.js"></script>
+        <script src="data/G93_519.js"></script>
+        <script src="data/G95_520.js"></script>
+        <script src="data/G97_521.js"></script>
+        <script src="data/60A_522.js"></script>
+        <script src="data/61A_523.js"></script>
+        <script src="data/621A_524.js"></script>
+        <script src="data/62A_525.js"></script>
+        <script src="data/62_526.js"></script>
+        <script src="data/63A_527.js"></script>
+        <script src="data/63C_528.js"></script>
+        <script src="data/63E_529.js"></script>
+        <script src="data/63E2_530.js"></script>
+        <script src="data/63G_531.js"></script>
+        <script src="data/63I_532.js"></script>
+        <script src="data/64A_533.js"></script>
+        <script src="data/65_534.js"></script>
+        <script src="data/G2_535.js"></script>
+        <script src="data/G4_536.js"></script>
+        <script src="data/G6_537.js"></script>
+        <script src="data/G8_538.js"></script>
+        <script src="data/G10_539.js"></script>
+        <script src="data/G12_540.js"></script>
+        <script src="data/G14_541.js"></script>
+        <script src="data/G16_542.js"></script>
+        <script src="data/G18_543.js"></script>
+        <script src="data/G20_544.js"></script>
+        <script src="data/G22_545.js"></script>
+        <script src="data/G24_546.js"></script>
+        <script src="data/G26_547.js"></script>
+        <script src="data/G28_548.js"></script>
+        <script src="data/G30_549.js"></script>
+        <script src="data/G32_550.js"></script>
+        <script src="data/G34_551.js"></script>
+        <script src="data/G36_552.js"></script>
+        <script src="data/G38_553.js"></script>
+        <script src="data/G40_554.js"></script>
+        <script src="data/G42_555.js"></script>
+        <script src="data/G44_556.js"></script>
+        <script src="data/G46_557.js"></script>
+        <script src="data/G48_558.js"></script>
+        <script src="data/G50_559.js"></script>
+        <script src="data/G52_560.js"></script>
+        <script src="data/G54_561.js"></script>
+        <script src="data/G56_562.js"></script>
+        <script src="data/G58_563.js"></script>
+        <script src="data/G60_564.js"></script>
+        <script src="data/G62_565.js"></script>
+        <script src="data/G64_566.js"></script>
+        <script src="data/G66_567.js"></script>
+        <script src="data/G68_568.js"></script>
+        <script src="data/G70_569.js"></script>
+        <script src="data/G72_570.js"></script>
+        <script src="data/G74_571.js"></script>
+        <script src="data/G76_572.js"></script>
+        <script src="data/G78_573.js"></script>
+        <script src="data/G226_574.js"></script>
+        <script src="data/G228_575.js"></script>
+        <script src="data/G230_576.js"></script>
+        <script src="data/G232_577.js"></script>
+        <script src="data/66A_578.js"></script>
+        <script src="data/66C_579.js"></script>
+        <script src="data/671A_580.js"></script>
+        <script src="data/67B_581.js"></script>
+        <script src="data/68A_582.js"></script>
+        <script src="data/68B_583.js"></script>
+        <script src="data/69A_584.js"></script>
+        <script src="data/701A_585.js"></script>
+        <script src="data/70_586.js"></script>
+        <script src="data/71_587.js"></script>
+        <script src="data/72_588.js"></script>
+        <script src="data/73A_589.js"></script>
+        <script src="data/73_590.js"></script>
+        <script src="data/74B_591.js"></script>
+        <script src="data/74D_592.js"></script>
+        <script src="data/75A_593.js"></script>
+        <script src="data/76A_594.js"></script>
+        <script src="data/76C_595.js"></script>
+        <script src="data/76E_596.js"></script>
+        <script src="data/76G_597.js"></script>
+        <script src="data/76I_598.js"></script>
+        <script src="data/76K_599.js"></script>
+        <script src="data/77A_600.js"></script>
+        <script src="data/77_601.js"></script>
+        <script src="data/78_602.js"></script>
+        <script src="data/79B_603.js"></script>
+        <script src="data/801A_604.js"></script>
+        <script src="data/80B_605.js"></script>
+        <script src="data/80D_606.js"></script>
+        <script src="data/81A_607.js"></script>
+        <script src="data/81B_608.js"></script>
+        <script src="data/82A_609.js"></script>
+        <script src="data/82_610.js"></script>
+        <script src="data/83B_611.js"></script>
+        <script src="data/83D_612.js"></script>
+        <script src="data/84_613.js"></script>
+        <script src="data/86A_614.js"></script>
+        <script src="data/87A_615.js"></script>
+        <script src="data/87_616.js"></script>
+        <script src="data/88B_617.js"></script>
+        <script src="data/89A_618.js"></script>
+        <script src="data/90A_619.js"></script>
+        <script src="data/91A_620.js"></script>
+        <script src="data/92A_621.js"></script>
+        <script src="data/92B1_622.js"></script>
+        <script src="data/92_623.js"></script>
+        <script src="data/93B_624.js"></script>
+        <script src="data/94A_625.js"></script>
+        <script src="data/95A_626.js"></script>
+        <script src="data/96A_627.js"></script>
+        <script src="data/96C_628.js"></script>
+        <script src="data/96E_629.js"></script>
+        <script src="data/97A_630.js"></script>
+        <script src="data/97_631.js"></script>
+        <script src="data/99A_632.js"></script>
+        <script src="data/100A_633.js"></script>
+        <script src="data/100C_634.js"></script>
+        <script src="data/101A_635.js"></script>
+        <script src="data/101_636.js"></script>
+        <script src="data/102B_637.js"></script>
+        <script src="data/102_638.js"></script>
+        <script src="data/103_639.js"></script>
+        <script src="data/104_640.js"></script>
+        <script src="data/105B_641.js"></script>
+        <script src="data/105D_642.js"></script>
+        <script src="data/106A_643.js"></script>
+        <script src="data/107A_644.js"></script>
+        <script src="data/107_645.js"></script>
+        <script src="data/108B_646.js"></script>
+        <script src="data/108D_647.js"></script>
+        <script src="data/108_648.js"></script>
+        <script src="data/109B_649.js"></script>
+        <script src="data/109D_650.js"></script>
+        <script src="data/110A_651.js"></script>
+        <script src="data/111A_652.js"></script>
+        <script src="data/111C_653.js"></script>
+        <script src="data/111E_654.js"></script>
+        <script src="data/112_655.js"></script>
+        <script src="data/114A_656.js"></script>
+        <script src="data/114C_657.js"></script>
+        <script src="data/114E_658.js"></script>
+        <script src="data/115A_659.js"></script>
+        <script src="data/115C_660.js"></script>
+        <script src="data/115E_661.js"></script>
+        <script src="data/115G_662.js"></script>
+        <script src="data/115_663.js"></script>
+        <script src="data/116_664.js"></script>
+        <script src="data/117B_665.js"></script>
+        <script src="data/118A_666.js"></script>
+        <script src="data/119A_667.js"></script>
+        <script src="data/119C_668.js"></script>
+        <script src="data/119D1_669.js"></script>
+        <script src="data/119F_670.js"></script>
+        <script src="data/119H_671.js"></script>
+        <script src="data/119J_672.js"></script>
+        <script src="data/120A_673.js"></script>
+        <script src="data/120C_674.js"></script>
+        <script src="data/121A_675.js"></script>
+        <script src="data/121C_676.js"></script>
+        <script src="data/G98_677.js"></script>
+        <script src="data/G100_678.js"></script>
+        <script src="data/G102_679.js"></script>
+        <script src="data/G104_680.js"></script>
+        <script src="data/G106_681.js"></script>
+        <script src="data/G108_682.js"></script>
+        <script src="data/G110_683.js"></script>
+        <script src="data/G112_684.js"></script>
+        <script src="data/G114_685.js"></script>
+        <script src="data/G116_686.js"></script>
+        <script src="data/G118_687.js"></script>
+        <script src="data/G120_688.js"></script>
+        <script src="data/G122_689.js"></script>
+        <script src="data/G124_690.js"></script>
+        <script src="data/G126_691.js"></script>
+        <script src="data/G128_692.js"></script>
+        <script src="data/G130_693.js"></script>
+        <script src="data/G132_694.js"></script>
+        <script src="data/G134_695.js"></script>
+        <script src="data/G136_696.js"></script>
+        <script src="data/G138_697.js"></script>
+        <script src="data/G140_698.js"></script>
+        <script src="data/G142_699.js"></script>
+        <script src="data/G144_700.js"></script>
+        <script src="data/G146_701.js"></script>
+        <script src="data/G148_702.js"></script>
+        <script src="data/G150_703.js"></script>
+        <script src="data/G152_704.js"></script>
+        <script src="data/G154_705.js"></script>
+        <script src="data/G156_706.js"></script>
+        <script src="data/G158_707.js"></script>
+        <script src="data/G160_708.js"></script>
+        <script src="data/G162_709.js"></script>
+        <script src="data/G164_710.js"></script>
+        <script src="data/G166_711.js"></script>
+        <script src="data/G168_712.js"></script>
+        <script src="data/G170_713.js"></script>
+        <script src="data/G172_714.js"></script>
+        <script src="data/G174_715.js"></script>
+        <script src="data/G176_716.js"></script>
+        <script src="data/G178_717.js"></script>
+        <script src="data/G180_718.js"></script>
+        <script src="data/G182_719.js"></script>
+        <script src="data/G184_720.js"></script>
+        <script src="data/G186_721.js"></script>
+        <script src="data/G188_722.js"></script>
+        <script src="data/G190_723.js"></script>
+        <script src="data/G192_724.js"></script>
+        <script src="data/G194_725.js"></script>
+        <script src="data/G196_726.js"></script>
+        <script src="data/G198_727.js"></script>
+        <script src="data/G200_728.js"></script>
+        <script src="data/G202_729.js"></script>
+        <script src="data/G204_730.js"></script>
+        <script src="data/G206_731.js"></script>
+        <script src="data/G208_732.js"></script>
+        <script src="data/G210_733.js"></script>
+        <script src="data/G212_734.js"></script>
+        <script src="data/G214_735.js"></script>
+        <script src="data/G216_736.js"></script>
+        <script src="data/G218_737.js"></script>
+        <script src="data/G220_738.js"></script>
+        <script src="data/G222_739.js"></script>
+        <script src="data/G224_740.js"></script>
+        <script src="data/G225_741.js"></script>
+        <script src="data/G227_742.js"></script>
+        <script src="data/G229_743.js"></script>
+        <script src="data/G231_744.js"></script>
+        <script src="data/G233_745.js"></script>
+        <script src="data/66B_746.js"></script>
+        <script src="data/66_747.js"></script>
+        <script src="data/67A_748.js"></script>
+        <script src="data/67_749.js"></script>
+        <script src="data/68A1_750.js"></script>
+        <script src="data/68_751.js"></script>
+        <script src="data/69_752.js"></script>
+        <script src="data/70A_753.js"></script>
+        <script src="data/71A_754.js"></script>
+        <script src="data/72A_755.js"></script>
+        <script src="data/731A_756.js"></script>
+        <script src="data/73B_757.js"></script>
+        <script src="data/74A_758.js"></script>
+        <script src="data/74C_759.js"></script>
+        <script src="data/74_760.js"></script>
+        <script src="data/75_761.js"></script>
+        <script src="data/76B_762.js"></script>
+        <script src="data/76D_763.js"></script>
+        <script src="data/76F_764.js"></script>
+        <script src="data/76H_765.js"></script>
+        <script src="data/76J_766.js"></script>
+        <script src="data/76_767.js"></script>
+        <script src="data/77Nat_768.js"></script>
+        <script src="data/78A_769.js"></script>
+        <script src="data/79A_770.js"></script>
+        <script src="data/79_771.js"></script>
+        <script src="data/80A_772.js"></script>
+        <script src="data/80C_773.js"></script>
+        <script src="data/80_774.js"></script>
+        <script src="data/81A1_775.js"></script>
+        <script src="data/81_776.js"></script>
+        <script src="data/82B_777.js"></script>
+        <script src="data/83A_778.js"></script>
+        <script src="data/83C_779.js"></script>
+        <script src="data/83_780.js"></script>
+        <script src="data/85_781.js"></script>
+        <script src="data/86_782.js"></script>
+        <script src="data/87B_783.js"></script>
+        <script src="data/88A_784.js"></script>
+        <script src="data/88_785.js"></script>
+        <script src="data/89_786.js"></script>
+        <script src="data/90_787.js"></script>
+        <script src="data/91_788.js"></script>
+        <script src="data/92B_789.js"></script>
+        <script src="data/92C_790.js"></script>
+        <script src="data/93A_791.js"></script>
+        <script src="data/93_792.js"></script>
+        <script src="data/94_793.js"></script>
+        <script src="data/95_794.js"></script>
+        <script src="data/96B_795.js"></script>
+        <script src="data/96D_796.js"></script>
+        <script src="data/96_797.js"></script>
+        <script src="data/97B_798.js"></script>
+        <script src="data/98_799.js"></script>
+        <script src="data/99_800.js"></script>
+        <script src="data/100B_801.js"></script>
+        <script src="data/100_802.js"></script>
+        <script src="data/101B_803.js"></script>
+        <script src="data/102A_804.js"></script>
+        <script src="data/102C_805.js"></script>
+        <script src="data/103A_806.js"></script>
+        <script src="data/104A_807.js"></script>
+        <script src="data/105A_808.js"></script>
+        <script src="data/105C_809.js"></script>
+        <script src="data/105_810.js"></script>
+        <script src="data/106_811.js"></script>
+        <script src="data/107B_812.js"></script>
+        <script src="data/108A_813.js"></script>
+        <script src="data/108C_814.js"></script>
+        <script src="data/108E_815.js"></script>
+        <script src="data/109A_816.js"></script>
+        <script src="data/109C_817.js"></script>
+        <script src="data/109_818.js"></script>
+        <script src="data/110_819.js"></script>
+        <script src="data/111B_820.js"></script>
+        <script src="data/111D_821.js"></script>
+        <script src="data/111_822.js"></script>
+        <script src="data/113_823.js"></script>
+        <script src="data/114B_824.js"></script>
+        <script src="data/114D_825.js"></script>
+        <script src="data/114_826.js"></script>
+        <script src="data/115B_827.js"></script>
+        <script src="data/115D_828.js"></script>
+        <script src="data/115F_829.js"></script>
+        <script src="data/115H_830.js"></script>
+        <script src="data/116A_831.js"></script>
+        <script src="data/117A_832.js"></script>
+        <script src="data/117_833.js"></script>
+        <script src="data/118_834.js"></script>
+        <script src="data/119B_835.js"></script>
+        <script src="data/119D_836.js"></script>
+        <script src="data/119E_837.js"></script>
+        <script src="data/119G_838.js"></script>
+        <script src="data/119I_839.js"></script>
+        <script src="data/119_840.js"></script>
+        <script src="data/120B_841.js"></script>
+        <script src="data/120_842.js"></script>
+        <script src="data/121B_843.js"></script>
+        <script src="data/121_844.js"></script>
+        <script src="data/G99_845.js"></script>
+        <script src="data/G101_846.js"></script>
+        <script src="data/G103_847.js"></script>
+        <script src="data/G105_848.js"></script>
+        <script src="data/G107_849.js"></script>
+        <script src="data/G109_850.js"></script>
+        <script src="data/G111_851.js"></script>
+        <script src="data/G113_852.js"></script>
+        <script src="data/G115_853.js"></script>
+        <script src="data/G117_854.js"></script>
+        <script src="data/G119_855.js"></script>
+        <script src="data/G121_856.js"></script>
+        <script src="data/G123_857.js"></script>
+        <script src="data/G125_858.js"></script>
+        <script src="data/G127_859.js"></script>
+        <script src="data/G129_860.js"></script>
+        <script src="data/G131_861.js"></script>
+        <script src="data/G133_862.js"></script>
+        <script src="data/G135_863.js"></script>
+        <script src="data/G137_864.js"></script>
+        <script src="data/G139_865.js"></script>
+        <script src="data/G141_866.js"></script>
+        <script src="data/G143_867.js"></script>
+        <script src="data/G145_868.js"></script>
+        <script src="data/G147_869.js"></script>
+        <script src="data/G149_870.js"></script>
+        <script src="data/G151_871.js"></script>
+        <script src="data/G153_872.js"></script>
+        <script src="data/G155_873.js"></script>
+        <script src="data/G157_874.js"></script>
+        <script src="data/G159_875.js"></script>
+        <script src="data/G161_876.js"></script>
+        <script src="data/G163_877.js"></script>
+        <script src="data/G165_878.js"></script>
+        <script src="data/G167_879.js"></script>
+        <script src="data/G169_880.js"></script>
+        <script src="data/G171_881.js"></script>
+        <script src="data/G173_882.js"></script>
+        <script src="data/G175_883.js"></script>
+        <script src="data/G177_884.js"></script>
+        <script src="data/G179_885.js"></script>
+        <script src="data/G181_886.js"></script>
+        <script src="data/G183_887.js"></script>
+        <script src="data/G185_888.js"></script>
+        <script src="data/G187_889.js"></script>
+        <script src="data/G189_890.js"></script>
+        <script src="data/G191_891.js"></script>
+        <script src="data/G193_892.js"></script>
+        <script src="data/G195_893.js"></script>
+        <script src="data/G197_894.js"></script>
+        <script src="data/G199_895.js"></script>
+        <script src="data/G201_896.js"></script>
+        <script src="data/G203_897.js"></script>
+        <script src="data/G205_898.js"></script>
+        <script src="data/G207_899.js"></script>
+        <script src="data/G209_900.js"></script>
+        <script src="data/G211_901.js"></script>
+        <script src="data/G213_902.js"></script>
+        <script src="data/G215_903.js"></script>
+        <script src="data/G217_904.js"></script>
+        <script src="data/G219_905.js"></script>
+        <script src="data/G221_906.js"></script>
+        <script src="data/G223_907.js"></script>
+        <script src="data/LimitesPNPG_909.js"></script>
+        <script src="data/ZPTMatadeCabrileMatadePalheirosZPT_910.js"></script>
+        <script src="data/ZPTRamiscalZPT_911.js"></script>
+        <script src="data/ZPTValedoHomem_912.js"></script>
+        <script src="data/ZonaProtecoParcial2_913.js"></script>
+        <script src="data/ZonaProtecoParcial1_914.js"></script>
+        <script src="data/CurralPradoBranda_915.js"></script>
+        <script src="data/CabanasAbrigos_916.js"></script>
+        <script src="data/Fontesdegua_917.js"></script>
+        <script src="data/CurralPradoBranda_918.js"></script>
+        <script src="data/Filao_919.js"></script>
+        <script src="data/TorresdeVigia_920.js"></script>
+        <script src="data/Muros_921.js"></script>
+        <script src="data/ArqueologiaArqueologia_922.js"></script>
+        <script src="data/ArqueologiaArqueologia_923.js"></script>
+        <script src="data/MarcosGeodsicos_924.js"></script>
+<script src="./mapbox/style.js"></script>
+<script src="./js/Autolinker.min.js"></script>
+<script>
+var map = new mapboxgl.Map({
+ container: 'map',
+ style: styleJSON,
+ center: [-8.09436256376658,41.75193937785549],
+ zoom: 12,
+ bearing: 360.0,
+ attributionControl: false
+});
+map.addControl(new mapboxgl.NavigationControl(), 'top-left');
+map.addControl(new mapboxgl.AttributionControl({
+    customAttribution: '<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://github.com/mapbox/mapbox-gl-js" target="_blank">Mapbox GL JS</a> &middot; <a href="https://qgis.org" target="_blank">QGIS</a>',
+    compact: false
+}));
+var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
+
+map.on('click', 'lyr_LimitesPNPG_909_0', function (e) {
+    var description = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['Name'] !== null ? autolinker.link(e.features[0].properties['Name'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['description'] !== null ? autolinker.link(e.features[0].properties['description'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['timestamp'] !== null ? autolinker.link(e.features[0].properties['timestamp'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['begin'] !== null ? autolinker.link(e.features[0].properties['begin'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['end'] !== null ? autolinker.link(e.features[0].properties['end'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['altitudeMode'] !== null ? autolinker.link(e.features[0].properties['altitudeMode'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['tessellate'] !== null ? autolinker.link(e.features[0].properties['tessellate'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['extrude'] !== null ? autolinker.link(e.features[0].properties['extrude'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['visibility'] !== null ? autolinker.link(e.features[0].properties['visibility'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['drawOrder'] !== null ? autolinker.link(e.features[0].properties['drawOrder'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['icon'] !== null ? autolinker.link(e.features[0].properties['icon'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['gx_media_links'] !== null ? autolinker.link(e.features[0].properties['gx_media_links'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>'
+
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(description)
+        .addTo(map);
+});
+
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'lyr_LimitesPNPG_909_0', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'lyr_LimitesPNPG_909_0', function () {
+    map.getCanvas().style.cursor = '';
+});
+map.on('click', 'lyr_ZPTMatadeCabrileMatadePalheirosZPT_910_0', function (e) {
+    var description = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['Name'] !== null ? autolinker.link(e.features[0].properties['Name'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['description'] !== null ? autolinker.link(e.features[0].properties['description'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['timestamp'] !== null ? autolinker.link(e.features[0].properties['timestamp'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['begin'] !== null ? autolinker.link(e.features[0].properties['begin'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['end'] !== null ? autolinker.link(e.features[0].properties['end'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['altitudeMode'] !== null ? autolinker.link(e.features[0].properties['altitudeMode'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['tessellate'] !== null ? autolinker.link(e.features[0].properties['tessellate'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['extrude'] !== null ? autolinker.link(e.features[0].properties['extrude'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['visibility'] !== null ? autolinker.link(e.features[0].properties['visibility'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['drawOrder'] !== null ? autolinker.link(e.features[0].properties['drawOrder'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['icon'] !== null ? autolinker.link(e.features[0].properties['icon'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['gx_media_links'] !== null ? autolinker.link(e.features[0].properties['gx_media_links'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>'
+
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(description)
+        .addTo(map);
+});
+
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'lyr_ZPTMatadeCabrileMatadePalheirosZPT_910_0', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'lyr_ZPTMatadeCabrileMatadePalheirosZPT_910_0', function () {
+    map.getCanvas().style.cursor = '';
+});
+map.on('click', 'lyr_ZPTRamiscalZPT_911_0', function (e) {
+    var description = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['Name'] !== null ? autolinker.link(e.features[0].properties['Name'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['description'] !== null ? autolinker.link(e.features[0].properties['description'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['timestamp'] !== null ? autolinker.link(e.features[0].properties['timestamp'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['begin'] !== null ? autolinker.link(e.features[0].properties['begin'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['end'] !== null ? autolinker.link(e.features[0].properties['end'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['altitudeMode'] !== null ? autolinker.link(e.features[0].properties['altitudeMode'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['tessellate'] !== null ? autolinker.link(e.features[0].properties['tessellate'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['extrude'] !== null ? autolinker.link(e.features[0].properties['extrude'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['visibility'] !== null ? autolinker.link(e.features[0].properties['visibility'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['drawOrder'] !== null ? autolinker.link(e.features[0].properties['drawOrder'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['icon'] !== null ? autolinker.link(e.features[0].properties['icon'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>'
+
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(description)
+        .addTo(map);
+});
+
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'lyr_ZPTRamiscalZPT_911_0', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'lyr_ZPTRamiscalZPT_911_0', function () {
+    map.getCanvas().style.cursor = '';
+});
+map.on('click', 'lyr_ZPTValedoHomem_912_0', function (e) {
+    var description = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['Name'] !== null ? autolinker.link(e.features[0].properties['Name'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['description'] !== null ? autolinker.link(e.features[0].properties['description'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['timestamp'] !== null ? autolinker.link(e.features[0].properties['timestamp'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['begin'] !== null ? autolinker.link(e.features[0].properties['begin'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['end'] !== null ? autolinker.link(e.features[0].properties['end'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['altitudeMode'] !== null ? autolinker.link(e.features[0].properties['altitudeMode'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['tessellate'] !== null ? autolinker.link(e.features[0].properties['tessellate'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['extrude'] !== null ? autolinker.link(e.features[0].properties['extrude'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['visibility'] !== null ? autolinker.link(e.features[0].properties['visibility'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['drawOrder'] !== null ? autolinker.link(e.features[0].properties['drawOrder'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['icon'] !== null ? autolinker.link(e.features[0].properties['icon'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['gx_media_links'] !== null ? autolinker.link(e.features[0].properties['gx_media_links'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>'
+
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(description)
+        .addTo(map);
+});
+
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'lyr_ZPTValedoHomem_912_0', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'lyr_ZPTValedoHomem_912_0', function () {
+    map.getCanvas().style.cursor = '';
+});
+map.on('click', 'lyr_ZonaProtecoParcial2_913_0', function (e) {
+    var description = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['Name'] !== null ? autolinker.link(e.features[0].properties['Name'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['description'] !== null ? autolinker.link(e.features[0].properties['description'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['timestamp'] !== null ? autolinker.link(e.features[0].properties['timestamp'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['begin'] !== null ? autolinker.link(e.features[0].properties['begin'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['end'] !== null ? autolinker.link(e.features[0].properties['end'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['altitudeMode'] !== null ? autolinker.link(e.features[0].properties['altitudeMode'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['tessellate'] !== null ? autolinker.link(e.features[0].properties['tessellate'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['extrude'] !== null ? autolinker.link(e.features[0].properties['extrude'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['visibility'] !== null ? autolinker.link(e.features[0].properties['visibility'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['drawOrder'] !== null ? autolinker.link(e.features[0].properties['drawOrder'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['icon'] !== null ? autolinker.link(e.features[0].properties['icon'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['descri____o'] !== null ? autolinker.link(e.features[0].properties['descri____o'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['ZONA_'] !== null ? autolinker.link(e.features[0].properties['ZONA_'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['AREA'] !== null ? autolinker.link(e.features[0].properties['AREA'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['PERIMETER'] !== null ? autolinker.link(e.features[0].properties['PERIMETER'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['PO_PNPG'] !== null ? autolinker.link(e.features[0].properties['PO_PNPG'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>'
+
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(description)
+        .addTo(map);
+});
+
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'lyr_ZonaProtecoParcial2_913_0', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'lyr_ZonaProtecoParcial2_913_0', function () {
+    map.getCanvas().style.cursor = '';
+});
+map.on('click', 'lyr_ZonaProtecoParcial1_914_0', function (e) {
+    var description = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['Name'] !== null ? autolinker.link(e.features[0].properties['Name'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['description'] !== null ? autolinker.link(e.features[0].properties['description'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['timestamp'] !== null ? autolinker.link(e.features[0].properties['timestamp'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['begin'] !== null ? autolinker.link(e.features[0].properties['begin'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['end'] !== null ? autolinker.link(e.features[0].properties['end'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['altitudeMode'] !== null ? autolinker.link(e.features[0].properties['altitudeMode'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['tessellate'] !== null ? autolinker.link(e.features[0].properties['tessellate'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['extrude'] !== null ? autolinker.link(e.features[0].properties['extrude'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['visibility'] !== null ? autolinker.link(e.features[0].properties['visibility'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['drawOrder'] !== null ? autolinker.link(e.features[0].properties['drawOrder'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['icon'] !== null ? autolinker.link(e.features[0].properties['icon'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['descri____o'] !== null ? autolinker.link(e.features[0].properties['descri____o'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['ZONA_'] !== null ? autolinker.link(e.features[0].properties['ZONA_'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['AREA'] !== null ? autolinker.link(e.features[0].properties['AREA'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['PERIMETER'] !== null ? autolinker.link(e.features[0].properties['PERIMETER'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['PO_PNPG'] !== null ? autolinker.link(e.features[0].properties['PO_PNPG'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>'
+
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(description)
+        .addTo(map);
+});
+
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'lyr_ZonaProtecoParcial1_914_0', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'lyr_ZonaProtecoParcial1_914_0', function () {
+    map.getCanvas().style.cursor = '';
+});
+map.on('click', 'lyr_CurralPradoBranda_915_0', function (e) {
+    var description = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['Name'] !== null ? autolinker.link(e.features[0].properties['Name'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['description'] !== null ? autolinker.link(e.features[0].properties['description'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['timestamp'] !== null ? autolinker.link(e.features[0].properties['timestamp'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['begin'] !== null ? autolinker.link(e.features[0].properties['begin'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['end'] !== null ? autolinker.link(e.features[0].properties['end'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['altitudeMode'] !== null ? autolinker.link(e.features[0].properties['altitudeMode'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['tessellate'] !== null ? autolinker.link(e.features[0].properties['tessellate'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['extrude'] !== null ? autolinker.link(e.features[0].properties['extrude'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['visibility'] !== null ? autolinker.link(e.features[0].properties['visibility'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['drawOrder'] !== null ? autolinker.link(e.features[0].properties['drawOrder'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['icon'] !== null ? autolinker.link(e.features[0].properties['icon'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>'
+
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(description)
+        .addTo(map);
+});
+
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'lyr_CurralPradoBranda_915_0', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'lyr_CurralPradoBranda_915_0', function () {
+    map.getCanvas().style.cursor = '';
+});
+map.on('click', 'lyr_CabanasAbrigos_916_0', function (e) {
+    var description = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['Name'] !== null ? autolinker.link(e.features[0].properties['Name'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['description'] !== null ? autolinker.link(e.features[0].properties['description'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['timestamp'] !== null ? autolinker.link(e.features[0].properties['timestamp'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['begin'] !== null ? autolinker.link(e.features[0].properties['begin'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['end'] !== null ? autolinker.link(e.features[0].properties['end'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['altitudeMode'] !== null ? autolinker.link(e.features[0].properties['altitudeMode'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['tessellate'] !== null ? autolinker.link(e.features[0].properties['tessellate'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['extrude'] !== null ? autolinker.link(e.features[0].properties['extrude'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['visibility'] !== null ? autolinker.link(e.features[0].properties['visibility'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['drawOrder'] !== null ? autolinker.link(e.features[0].properties['drawOrder'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['icon'] !== null ? autolinker.link(e.features[0].properties['icon'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['gx_media_links'] !== null ? autolinker.link(e.features[0].properties['gx_media_links'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>'
+
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(description)
+        .addTo(map);
+});
+
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'lyr_CabanasAbrigos_916_0', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'lyr_CabanasAbrigos_916_0', function () {
+    map.getCanvas().style.cursor = '';
+});
+map.on('click', 'lyr_Fontesdegua_917_0', function (e) {
+    var description = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['Name'] !== null ? autolinker.link(e.features[0].properties['Name'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['description'] !== null ? autolinker.link(e.features[0].properties['description'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['timestamp'] !== null ? autolinker.link(e.features[0].properties['timestamp'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['begin'] !== null ? autolinker.link(e.features[0].properties['begin'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['end'] !== null ? autolinker.link(e.features[0].properties['end'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['altitudeMode'] !== null ? autolinker.link(e.features[0].properties['altitudeMode'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['tessellate'] !== null ? autolinker.link(e.features[0].properties['tessellate'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['extrude'] !== null ? autolinker.link(e.features[0].properties['extrude'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['visibility'] !== null ? autolinker.link(e.features[0].properties['visibility'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['drawOrder'] !== null ? autolinker.link(e.features[0].properties['drawOrder'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['icon'] !== null ? autolinker.link(e.features[0].properties['icon'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>'
+
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(description)
+        .addTo(map);
+});
+
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'lyr_Fontesdegua_917_0', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'lyr_Fontesdegua_917_0', function () {
+    map.getCanvas().style.cursor = '';
+});
+map.on('click', 'lyr_CurralPradoBranda_918_0', function (e) {
+    var description = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['Name'] !== null ? autolinker.link(e.features[0].properties['Name'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['description'] !== null ? autolinker.link(e.features[0].properties['description'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['timestamp'] !== null ? autolinker.link(e.features[0].properties['timestamp'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['begin'] !== null ? autolinker.link(e.features[0].properties['begin'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['end'] !== null ? autolinker.link(e.features[0].properties['end'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['altitudeMode'] !== null ? autolinker.link(e.features[0].properties['altitudeMode'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['tessellate'] !== null ? autolinker.link(e.features[0].properties['tessellate'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['extrude'] !== null ? autolinker.link(e.features[0].properties['extrude'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['visibility'] !== null ? autolinker.link(e.features[0].properties['visibility'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['drawOrder'] !== null ? autolinker.link(e.features[0].properties['drawOrder'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['icon'] !== null ? autolinker.link(e.features[0].properties['icon'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>'
+
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(description)
+        .addTo(map);
+});
+
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'lyr_CurralPradoBranda_918_0', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'lyr_CurralPradoBranda_918_0', function () {
+    map.getCanvas().style.cursor = '';
+});
+map.on('click', 'lyr_Filao_919_0', function (e) {
+    var description = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['Name'] !== null ? autolinker.link(e.features[0].properties['Name'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['description'] !== null ? autolinker.link(e.features[0].properties['description'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['timestamp'] !== null ? autolinker.link(e.features[0].properties['timestamp'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['begin'] !== null ? autolinker.link(e.features[0].properties['begin'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['end'] !== null ? autolinker.link(e.features[0].properties['end'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['altitudeMode'] !== null ? autolinker.link(e.features[0].properties['altitudeMode'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['tessellate'] !== null ? autolinker.link(e.features[0].properties['tessellate'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['extrude'] !== null ? autolinker.link(e.features[0].properties['extrude'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['visibility'] !== null ? autolinker.link(e.features[0].properties['visibility'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['drawOrder'] !== null ? autolinker.link(e.features[0].properties['drawOrder'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['icon'] !== null ? autolinker.link(e.features[0].properties['icon'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['full_id'] !== null ? autolinker.link(e.features[0].properties['full_id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['osm_id'] !== null ? autolinker.link(e.features[0].properties['osm_id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['osm_type'] !== null ? autolinker.link(e.features[0].properties['osm_type'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['historic'] !== null ? autolinker.link(e.features[0].properties['historic'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['landuse'] !== null ? autolinker.link(e.features[0].properties['landuse'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['plant:output:electricity'] !== null ? autolinker.link(e.features[0].properties['plant:output:electricity'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['plant:source'] !== null ? autolinker.link(e.features[0].properties['plant:source'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['power'] !== null ? autolinker.link(e.features[0].properties['power'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['layer'] !== null ? autolinker.link(e.features[0].properties['layer'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['location'] !== null ? autolinker.link(e.features[0].properties['location'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['man_made'] !== null ? autolinker.link(e.features[0].properties['man_made'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['url'] !== null ? autolinker.link(e.features[0].properties['url'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>'
+
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(description)
+        .addTo(map);
+});
+
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'lyr_Filao_919_0', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'lyr_Filao_919_0', function () {
+    map.getCanvas().style.cursor = '';
+});
+map.on('click', 'lyr_TorresdeVigia_920_0', function (e) {
+    var description = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['Name'] !== null ? autolinker.link(e.features[0].properties['Name'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['description'] !== null ? autolinker.link(e.features[0].properties['description'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['timestamp'] !== null ? autolinker.link(e.features[0].properties['timestamp'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['begin'] !== null ? autolinker.link(e.features[0].properties['begin'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['end'] !== null ? autolinker.link(e.features[0].properties['end'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['altitudeMode'] !== null ? autolinker.link(e.features[0].properties['altitudeMode'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['tessellate'] !== null ? autolinker.link(e.features[0].properties['tessellate'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['extrude'] !== null ? autolinker.link(e.features[0].properties['extrude'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['visibility'] !== null ? autolinker.link(e.features[0].properties['visibility'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['drawOrder'] !== null ? autolinker.link(e.features[0].properties['drawOrder'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['icon'] !== null ? autolinker.link(e.features[0].properties['icon'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['full_id'] !== null ? autolinker.link(e.features[0].properties['full_id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['osm_id'] !== null ? autolinker.link(e.features[0].properties['osm_id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['osm_type'] !== null ? autolinker.link(e.features[0].properties['osm_type'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['man_made'] !== null ? autolinker.link(e.features[0].properties['man_made'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['tower:type'] !== null ? autolinker.link(e.features[0].properties['tower:type'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['tourism'] !== null ? autolinker.link(e.features[0].properties['tourism'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['access'] !== null ? autolinker.link(e.features[0].properties['access'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['ele'] !== null ? autolinker.link(e.features[0].properties['ele'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['height'] !== null ? autolinker.link(e.features[0].properties['height'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['height:viewpoint'] !== null ? autolinker.link(e.features[0].properties['height:viewpoint'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['material'] !== null ? autolinker.link(e.features[0].properties['material'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['ownership'] !== null ? autolinker.link(e.features[0].properties['ownership'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['ref:scrif'] !== null ? autolinker.link(e.features[0].properties['ref:scrif'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['start_date'] !== null ? autolinker.link(e.features[0].properties['start_date'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['tower:construction'] !== null ? autolinker.link(e.features[0].properties['tower:construction'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['website'] !== null ? autolinker.link(e.features[0].properties['website'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['survey:date'] !== null ? autolinker.link(e.features[0].properties['survey:date'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>'
+
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(description)
+        .addTo(map);
+});
+
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'lyr_TorresdeVigia_920_0', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'lyr_TorresdeVigia_920_0', function () {
+    map.getCanvas().style.cursor = '';
+});
+map.on('click', 'lyr_Muros_921_0', function (e) {
+    var description = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['Name'] !== null ? autolinker.link(e.features[0].properties['Name'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['description'] !== null ? autolinker.link(e.features[0].properties['description'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['timestamp'] !== null ? autolinker.link(e.features[0].properties['timestamp'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['begin'] !== null ? autolinker.link(e.features[0].properties['begin'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['end'] !== null ? autolinker.link(e.features[0].properties['end'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['altitudeMode'] !== null ? autolinker.link(e.features[0].properties['altitudeMode'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['tessellate'] !== null ? autolinker.link(e.features[0].properties['tessellate'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['extrude'] !== null ? autolinker.link(e.features[0].properties['extrude'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['visibility'] !== null ? autolinker.link(e.features[0].properties['visibility'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['drawOrder'] !== null ? autolinker.link(e.features[0].properties['drawOrder'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['icon'] !== null ? autolinker.link(e.features[0].properties['icon'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>'
+
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(description)
+        .addTo(map);
+});
+
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'lyr_Muros_921_0', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'lyr_Muros_921_0', function () {
+    map.getCanvas().style.cursor = '';
+});
+map.on('click', 'lyr_ArqueologiaArqueologia_922_0', function (e) {
+    var description = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['Name'] !== null ? autolinker.link(e.features[0].properties['Name'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['description'] !== null ? autolinker.link(e.features[0].properties['description'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['timestamp'] !== null ? autolinker.link(e.features[0].properties['timestamp'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['begin'] !== null ? autolinker.link(e.features[0].properties['begin'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['end'] !== null ? autolinker.link(e.features[0].properties['end'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['altitudeMode'] !== null ? autolinker.link(e.features[0].properties['altitudeMode'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['tessellate'] !== null ? autolinker.link(e.features[0].properties['tessellate'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['extrude'] !== null ? autolinker.link(e.features[0].properties['extrude'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['visibility'] !== null ? autolinker.link(e.features[0].properties['visibility'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['drawOrder'] !== null ? autolinker.link(e.features[0].properties['drawOrder'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['icon'] !== null ? autolinker.link(e.features[0].properties['icon'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>'
+
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(description)
+        .addTo(map);
+});
+
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'lyr_ArqueologiaArqueologia_922_0', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'lyr_ArqueologiaArqueologia_922_0', function () {
+    map.getCanvas().style.cursor = '';
+});
+map.on('click', 'lyr_ArqueologiaArqueologia_923_0', function (e) {
+    var description = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['Name'] !== null ? autolinker.link(e.features[0].properties['Name'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['description'] !== null ? autolinker.link(e.features[0].properties['description'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['timestamp'] !== null ? autolinker.link(e.features[0].properties['timestamp'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['begin'] !== null ? autolinker.link(e.features[0].properties['begin'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['end'] !== null ? autolinker.link(e.features[0].properties['end'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['altitudeMode'] !== null ? autolinker.link(e.features[0].properties['altitudeMode'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['tessellate'] !== null ? autolinker.link(e.features[0].properties['tessellate'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['extrude'] !== null ? autolinker.link(e.features[0].properties['extrude'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['visibility'] !== null ? autolinker.link(e.features[0].properties['visibility'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['drawOrder'] !== null ? autolinker.link(e.features[0].properties['drawOrder'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['icon'] !== null ? autolinker.link(e.features[0].properties['icon'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>'
+
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(description)
+        .addTo(map);
+});
+
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'lyr_ArqueologiaArqueologia_923_0', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'lyr_ArqueologiaArqueologia_923_0', function () {
+    map.getCanvas().style.cursor = '';
+});
+map.on('click', 'lyr_MarcosGeodsicos_924_0', function (e) {
+    var description = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['Name'] !== null ? autolinker.link(e.features[0].properties['Name'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['description'] !== null ? autolinker.link(e.features[0].properties['description'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['timestamp'] !== null ? autolinker.link(e.features[0].properties['timestamp'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['begin'] !== null ? autolinker.link(e.features[0].properties['begin'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['end'] !== null ? autolinker.link(e.features[0].properties['end'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['altitudeMode'] !== null ? autolinker.link(e.features[0].properties['altitudeMode'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['tessellate'] !== null ? autolinker.link(e.features[0].properties['tessellate'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['extrude'] !== null ? autolinker.link(e.features[0].properties['extrude'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['visibility'] !== null ? autolinker.link(e.features[0].properties['visibility'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['drawOrder'] !== null ? autolinker.link(e.features[0].properties['drawOrder'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['icon'] !== null ? autolinker.link(e.features[0].properties['icon'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['full_id'] !== null ? autolinker.link(e.features[0].properties['full_id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['osm_id'] !== null ? autolinker.link(e.features[0].properties['osm_id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['osm_type'] !== null ? autolinker.link(e.features[0].properties['osm_type'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['ele'] !== null ? autolinker.link(e.features[0].properties['ele'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['height'] !== null ? autolinker.link(e.features[0].properties['height'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['ign_latitud'] !== null ? autolinker.link(e.features[0].properties['ign_latitud'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['ign_longitud'] !== null ? autolinker.link(e.features[0].properties['ign_longitud'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['ign_red'] !== null ? autolinker.link(e.features[0].properties['ign_red'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['man_made'] !== null ? autolinker.link(e.features[0].properties['man_made'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['note_en'] !== null ? autolinker.link(e.features[0].properties['note_en'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['note_pt'] !== null ? autolinker.link(e.features[0].properties['note_pt'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['ref'] !== null ? autolinker.link(e.features[0].properties['ref'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['source_ref'] !== null ? autolinker.link(e.features[0].properties['source_ref'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['triangulation_point'] !== null ? autolinker.link(e.features[0].properties['triangulation_point'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['source_pkey'] !== null ? autolinker.link(e.features[0].properties['source_pkey'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['survey_date'] !== null ? autolinker.link(e.features[0].properties['survey_date'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['website'] !== null ? autolinker.link(e.features[0].properties['website'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['width'] !== null ? autolinker.link(e.features[0].properties['width'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['start_date'] !== null ? autolinker.link(e.features[0].properties['start_date'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>'
+
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(description)
+        .addTo(map);
+});
+
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'lyr_MarcosGeodsicos_924_0', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'lyr_MarcosGeodsicos_924_0', function () {
+    map.getCanvas().style.cursor = '';
+});
+</script>
+        <script>
+        map.addControl(
+            new mapboxgl.GeolocateControl({
+                positionOptions: {
+                    enableHighAccuracy: true
+                },
+                trackUserLocation: true
+            })
+        );
+        </script>
+    </body>
+</html>
